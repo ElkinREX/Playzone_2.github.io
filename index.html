@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+  <title>Ejemplo con CSS externo</title>
+  <!-- Enlazamos el archivo de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a mi página</h1>
+    <nav><nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="menu" id="menu">
+      <ul>
+        <img src="imagenes/Gemini_Generated_Image_9rnwe39rnwe39rnw.png"></img>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Hola somos los responsables de playzone, esta es una pagina de html y css.</p>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <p>Aqui mostraremos todos los proyectos que tenemos en plyazone juntos con eventos y actividades que se harán en esta empresa</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Si quieres comunicarte conmigo, puedes escribirme a <a href="mailto:correo@ejemplo.com">playzone.rewq2024@gmail.com</a>.</p>
+    </section>
+  </main>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿QUIENES SOMOS?</h2>
+      <p>Somos una empresa de venta y alquites de juegos de mesa y videojuegos para comunidad.</p>
+    </section>
+
+    <section>
+      <h2>¿QUE HACEMOS POR LA COMUNIDAD?</h2>
+      <p>Hacemos eventos/torneos de video juegos y juegos retro con premios para la comunidad</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 TODOS LOS DERECHOS SON DE PLAYZONE</p>
+  </footer>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
